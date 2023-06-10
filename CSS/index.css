@@ -1,0 +1,130 @@
+*{
+  box-sizing: border-box;
+}
+*:focus{
+  outline: 3px dashed #00f2ff;
+  outline-offset: 3px;
+}
+body{
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Roboto", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width:100%;
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+/* HEADER */
+.site-header{
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #fff;
+}
+.site-header-container{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-link{
+  transition: opacity o.4s ease;
+}
+.logo-link:hover{
+  color: #DE2E54;
+}
+.logo-link:active{
+  opacity:0.6;
+}
+.logo-link img{
+  display: block;
+}
+.site-header-actions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-heading{
+  margin-left: 16px;
+}
+.sitenav-list{
+  display:flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  margin-right: 114px;
+}
+.sitenav-item{
+  margin-right: 32px;
+}
+.sitenav-item:last-child{
+  margin-right: 0;
+}
+.sitenav-link{
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration:none;
+  color: #000;
+  transition: color 0.4s ease,
+  opacity 0.4s ease;
+}
+.sitenav-link:hover{
+  color:#DE2E54;
+}
+.sitenav-link:active{
+  opacity: 0.6;
+}
+.site-header-main-link{
+  text-decoration: none;
+}
+.site-header-logotext{
+  display: flex;
+}
+.main-link{
+  display: inline-block;
+  padding: 12px 24px;
+  text-transform:uppercase;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  background: #DE2E54;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #DE2E54;
+}
+/* HERO */
+.hero{
+  background-color:#0EB4C1;
+}
+.hero-link{
+  text-transform: uppercase;
+  border-radius: 8px;
+  background-color: #DE2E54;
+  border: 2px solid #DE2E54;
+  
+}
+.hero-heading{
+  
+}
+
+/* FEATURE */
+.feature-link{
+  text-transform: uppercase;
+  border-radius:8px;
+  background-color: #DE2E54;
+  border: 2px solid #DE2E54; 
+}
+
+/* FOOTER */
+.footer-bottom{
+  background-color:#222;
+}
