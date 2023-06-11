@@ -28,6 +28,7 @@ body{
 /* Site logo */
 .site-logo img{
   margin-right: 16px;
+  border-radius: 50%;
 }
 .site-logo{
   display: flex;
@@ -97,6 +98,17 @@ body{
 .sitenav-link:active{
   opacity: 0.6;
 }
+
+.sitenav-footer .sitenav-link{
+  color: #fff;
+}
+.sitenav-footer .sitenav-link:hover{
+  color:#DE2E54;
+}
+.sitenav-footer .sitenav-link:active{
+  color:#fff;
+  opacity: 0.6;
+}
 .main-link{
   display: inline-block;
   padding: 10px 22px;
@@ -144,6 +156,21 @@ body{
 } */
 
 /* FOOTER */
-/* .footer-bottom{
-  background-color:#222;
-} */
+.site-footer{
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #222;
+  color: #fff;
+}
+.site-footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-logo-footer{
+  color: #fff;
+}
+.site-logo-footer:active{
+  color:#fff;
+  opacity: 0.6;
+}
