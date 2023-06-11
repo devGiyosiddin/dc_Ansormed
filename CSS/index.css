@@ -3,13 +3,17 @@
 }
 
 body{
-  font-family: "open Sans", "Arial",sans-serif;
+  font-family: "Open Sans", "Arial",sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1;
-  font-family: "Roboto", "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  color: #444
+  color: #222
+}
+*:focus{
+  outline: 2px dotted #DE2E54;
+  outline-offset: 2px;
 }
 .container{
   width:100%;
@@ -23,20 +27,23 @@ body{
 
 /* Site logo */
 .site-logo img{
+  margin-right: 16px;
+}
+.site-logo{
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "OPen Sans", "Arial", sans-serif;
   color: #222;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
-  margin-right: 16px; 
 }
 .site-logo:hover{
   color: #DE2E54;
 }
 .site-logo:active{
-  opacity: 0.6em;
+  opacity: 0.6;
 }
 
 
@@ -54,12 +61,19 @@ body{
   margin: 0;
   list-style: none;
 }
+/* .sitenav-list li{
+  color: #222;
+  font-weight: 700;
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-decoration: none;
+} */
 .sitenav-item:not(:last-child){
   margin-right: 32px;
 }
 .sitenav-link{
   display:block;
-  text-transform:uppercase;
+  color: #222;
+  text-decoration: none;
 }
 /* HEADER*/  
  .site-header{
@@ -80,45 +94,32 @@ body{
 .sitenav-item:last-child{
   margin-right: 0;
 }
-.sitenav-link{
-  display:block;   
-  font-size: 14px;
-  line-height: 15px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-decoration:none;
-  color: #222;
-  transition: color 0.4s ease,
-  opacity 0.4s ease;
-}
-.sitenav-link:hover{
-  color:#DE2E54;
-}
 .sitenav-link:active{
   opacity: 0.6;
 }
-/*
-.site-header-main-link{
-  text-decoration: none;
-}
-.site-logo-text{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .main-link{
   display: inline-block;
-  padding: 12px 24px;
-  text-transform:uppercase;
+  padding: 10px 22px;
+  border: 2px solid #DE2E54;
   border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 1.5;
-  background: #DE2E54;
+  font-size: 15px;
+  font-family:"Roboto", "Arial", sans-serif;
+  letter-spacing: 2px;
+  background-color: #DE2E54;
   color: #fff;
   text-decoration: none;
-  border: 2px solid #DE2E54;
-} */
+  text-transform:uppercase;
+}
+.main-link:hover{
+  color: #DE2E54;
+  background-color: #fff;
+}
+.main-link:active{
+  background-color: #DE2E54;
+  color: #fff;
+  opacity: 0.6;
+}
+
 /* HERO */
 /* .hero{
   background-color:#0EB4C1;
