@@ -61,12 +61,6 @@ body{
   margin: 0;
   list-style: none;
 }
-/* .sitenav-list li{
-  color: #222;
-  font-weight: 700;
-  font-family: "Open Sans", "Arial", sans-serif;
-  text-decoration: none;
-} */
 .sitenav-item:not(:last-child){
   margin-right: 32px;
 }
@@ -74,6 +68,12 @@ body{
   display:block;
   color: #222;
   text-decoration: none;
+}
+.sitenav-link:hover{
+  color:#DE2E54;
+}
+.sitenav-link:active{
+  opacity: 0.6;
 }
 /* HEADER*/  
  .site-header{
