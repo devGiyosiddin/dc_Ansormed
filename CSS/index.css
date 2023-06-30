@@ -229,10 +229,10 @@ body{
   object-fit: cover;
   margin-right: 64px;
   border-radius: 24px;
-  box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3);
+  /* box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3); rasmni o'zida box-shadow bor bo'lgani uchun  bu olib tashlandi*/
 }
 .index-service-content{
-  width: 600px;
+  width: 900px;
 }
 .index-services-title{
   margin-top: 0;
