@@ -224,12 +224,18 @@ body{
   align-items: center;
 }
 .index-services-img{
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  margin: 16px; */
   width: 200px;
   height: 200px;
   object-fit: cover;
   margin-right: 64px;
   border-radius: 24px;
-  /* box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3); rasmni o'zida box-shadow bor bo'lgani uchun  bu olib tashlandi*/
+  box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3);
 }
 .index-service-content{
   width: 900px;
