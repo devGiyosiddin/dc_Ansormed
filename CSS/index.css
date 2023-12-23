@@ -79,7 +79,7 @@ body{
   opacity: 0.6;
 }
 /* HEADER*/  
- .site-header{
+.site-header{
   padding-top: 24px;
   padding-bottom: 24px;
   background-color: #fff;
@@ -155,7 +155,7 @@ body{
 
 
 /* HERO */
- .hero{
+.hero{
   color: #fff;
   background-color:#0EB4C1;
   margin: 0;
@@ -164,11 +164,11 @@ body{
 .hero-container{
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .hero-content{
+  width: 100%;
+  max-width: 500px;
   align-items: center;
-  width: 500px;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -177,10 +177,10 @@ body{
   margin:0;
   font-size: 36px;
   margin-bottom: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 43px;
-    letter-spacing: 1px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 1px;
 }
 .hero-text{
   width: 440px;
@@ -196,10 +196,6 @@ body{
 .index-services{
   padding-top: 120px;
   padding-bottom: 120px;
-/*   align-items: center;
-  background-color: #fff;
-  margin: 0;
-  padding: 0; */
 }
 .index-services-heading{
   font-family: "Open Sans", "Raobot", "Arial", sans-serif;
@@ -226,13 +222,7 @@ body{
   display: flex;
   align-items: center;
 }
-.index-services-img{
-  /* display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: 200px;
-  margin: 16px; */
+.index-services-img {
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -294,4 +284,38 @@ body{
 .site-logo-footer{
   color: #fff;
 }
- 
+
+@media only screen and (max-width: 1000px) {
+  .hero-content {
+    width: 50%;
+    padding: 60px 0;
+  }
+  .hero-img {
+    width: 40%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .hero-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 40px 0;
+   }
+   .hero-heading {
+    width: 100%;
+    font-size: 24px;
+   }
+   .hero-text {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .hero-img {
+    width: 55%;
+  }
+}
