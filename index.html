@@ -19,16 +19,16 @@
 <body>
   
   <!-- HEADER -->
-  <header class="site-header" style="display: none;">
+  <header class="site-header">
     <div class="site-header-container container">
-      <a href="index.html" class="site-logo">
+      <a href="index.html" class="site-logo site-header__site-logo">
         <img src="img/logo-icon.svg" width="50" height="50" alt="Logo Ansormed">
         <span class="site-logo-text">AnsorMed</span>
       </a>
       <div class="site-header-actions">
         
         <!-- SITENAV -->
-        <nav class="sitenav">
+        <nav class="sitenav site-header-sitenav">
           <ul class="sitenav-list">
             <li class="sitenav-item"><a href="#" class="sitenav-link">XIZMATLAR</a></li>
             <li class="sitenav-item"><a href="#" class="sitenav-link">DORILAR</a></li>
@@ -38,7 +38,9 @@
           </ul>
         </nav>
       </div>
-      <a href="#index-cta" class="main-link">QABULGA YOZILISH</a>
+      <a href="#index-cta" class="main-link site-header__main-link">QABULGA YOZILISH</a>
+
+      <button class="site-header__menu-toggler" type="button">Menyu</button>
     </div>
   </header>
   <main>
@@ -129,5 +131,14 @@
       </div>
     </div>
   </footer>
+  <script>
+    const elToggleButton = document.querySelector('.site-header__menu-toggler');
+    const elSiteHeader = document.querySelector('.site-header');
+    if (elToggleButton) {
+      elToggleButton.addEventListener("click", function() {
+        elSiteHeader.classList.toggle("site-header--open")
+      });
+    };
+  </script>
 </body>
 </html>
