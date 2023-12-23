@@ -71,6 +71,7 @@ body{
   display:block;
   color: #222;
   text-decoration: none;
+  line-height: 21px;
 }
 .sitenav-link:hover{
   color:#DE2E54;
@@ -305,6 +306,26 @@ body{
     margin-right: 32px;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .site-footer-container {
+    flex-direction: column;
+  }
+  .site-logo-footer {
+    margin-bottom: 24px;
+  }
+  .sitenav-footer .sitenav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sitenav-footer .sitenav-item:not(:last-child) {
+    margin-right: 0;
+  }
+  .sitenav-footer .sitenav-item {
+    margin: 0 16px;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .hero-container {
     flex-wrap: wrap;
