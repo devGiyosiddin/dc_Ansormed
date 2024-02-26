@@ -31,8 +31,7 @@ body{
 }
 
 *:focus{
-  outline: 2px dashed #0168bc;
-  outline-offset: 2px;
+  outline: none;
 }
 .container{
   width:100%;
@@ -254,9 +253,13 @@ body{
 
 .index-services-item {
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(7px);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 20px;
+}
+
+.index-services-item:hover {
+  background-color:  rgba(255, 255, 255, 0.2);
 }
 
 .index-services-item:not(:last-child){
