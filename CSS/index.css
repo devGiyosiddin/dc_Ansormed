@@ -348,12 +348,12 @@ body{
     padding: 10px;
     cursor: pointer;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 700;
     font-family: "Open Sans", "Arial",sans-serif;
     border-radius: 5px;
-    color: #777;
-    border: 1px solid #777;
-    background-color: #fff;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
     transition: 0.3s;
   }
   .site-header__menu-toggler:hover {
@@ -373,7 +373,7 @@ body{
     left: 0;
     top: 100%;
     padding: 30px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.2);
   }
   .site-header-sitenav .sitenav-list {
     flex-direction: column;
@@ -388,7 +388,10 @@ body{
 @media only screen and (max-width: 1000px) {
   .hero-content {
     width: 50%;
-    padding: 60px 0;
+    padding: 20px;
+  }
+  .hero-heading {
+    font-size: 2rem;
   }
   .hero-img {
     width: 40%;
@@ -426,14 +429,14 @@ body{
 
 @media only screen and (max-width: 800px) {
   .hero-container {
+    width: 700px;
     flex-wrap: wrap;
-    justify-content: center;
   }
   .hero-content {
     width: 100%;
     max-width: 100%;
     text-align: center;
-    padding: 40px 0;
+    padding: 15px;
    }
    .hero-heading {
     width: 100%;
@@ -441,10 +444,32 @@ body{
    }
    .hero-text {
     width: 100%;
+    max-width: 600px;
+  }
+  .hero-img {
+    margin: 0 auto;
   }
 }
 
 @media only screen and (max-width: 700px) {
+  .hero-heading {
+    font-size: 22px;
+  }
+  .hero-container {
+    width: 600px;
+    flex-wrap: wrap;
+  }
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 15px;
+   }
+   .hero-text {
+    font-size: 15px;
+    width: 100%;
+    max-width: 500px;
+  }
   .index-services {
     padding: 60px 0;
   }
@@ -484,6 +509,16 @@ body{
   }
   .index-service-content {
     width: 100%;
+  }
+  .hero-container {
+    max-width: 500px;
+    padding: 10px;
+  }
+  .hero-heading {
+    font-size: 21px;
+  }
+  .hero-text {
+    font-size: 14px;
   }
   .hero-img {
     width: 55%;
