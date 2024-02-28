@@ -1,3 +1,7 @@
+:root {
+  --text-font: "Open Sans", "Arial", sans-serif;
+}
+
 *{
   box-sizing: border-box;
 }
@@ -10,7 +14,7 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
-  font-family: "Open Sans", "Arial",sans-serif;
+  font-family: var(--text-font);
   background-color: #555;
   margin: 0;
   padding: 0;
@@ -225,13 +229,12 @@ body{
 
 /* INDEX-SERVICES */
 .index-services{
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 120px 0;
 }
 .index-services-heading{
   width: 100%;
   max-width: 240px;
-  font-family: "Open Sans", "Raobot", "Arial", sans-serif;
+  var(--text-font);
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
@@ -305,7 +308,7 @@ body{
   max-width: 550px;
   margin: 0 auto 40px;
   text-align: center;
-  font-family: "Open Sans", "Raobot", "Arial", sans-serif;
+  var(--text-font);
   font-size: 36px;
   line-height: 1.5;
 }
@@ -328,7 +331,7 @@ body{
   display: flex;
   align-items: center;
   color: #fff;
-  font-family: "Open Sans", "Raobot", "Arial", sans-serif;
+  var(--text-font);
   border-radius: 20px;
   backdrop-filter: blur(7px);
   background-color: rgba(0, 0, 0, 0.3);
@@ -336,11 +339,12 @@ body{
 }
 
 .asal-content {
+
 }
 
 .asal-img {
-  width: 500px;
-  height: 300px;
+  width: 120%;
+  height: auto;
   border-radius: 20px;
   margin-right: 30px;
 }
@@ -389,7 +393,7 @@ body{
     cursor: pointer;
     font-size: 17px;
     font-weight: 700;
-    font-family: "Open Sans", "Arial",sans-serif;
+    font-family: var(--text-font);
     border-radius: 5px;
     color: #fff;
     border: 1px solid #fff;
