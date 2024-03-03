@@ -65,4 +65,6 @@ elModalForm.addEventListener('submit', (e) => {
     // Очищаем значения полей формы
     document.querySelector('#name').value = '';
     document.querySelector('#phone').value = '';
+
+    elModal.classList.remove('modal--open')
 });
