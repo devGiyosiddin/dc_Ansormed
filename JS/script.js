@@ -38,3 +38,29 @@ elModalOpenerBtns.forEach((item) => {
         elModal.classList.add('modal--open');
     });
 });
+
+elModalForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    var userName = document.querySelector('#name').value;
+    var userPhone = document.querySelector('#phone').value;
+
+    // Формируем сообщение, включая имя и номер телефона пользователя
+    var message = `${userName} - ${userPhone}`;
+
+    // Bot token
+    var token = '6402112095:AAEiMcLy4raZiGg2a9SYYT1-noqKX-Qyne8';
+    var chat_id = '-4097526078';
+
+    // URL запроса, включая сообщение
+    var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${message}`;
+
+    let api = new XMLHttpRequest();
+    api.open("GET", url, true);
+    api.send();
+
+    // Очищаем значения полей формы
+    document.querySelector('#name').value = '';
+    document.querySelector('#phone').value = '';
+});
+
