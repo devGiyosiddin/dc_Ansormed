@@ -45,8 +45,11 @@ elModalForm.addEventListener('submit', (e) => {
     var userName = document.querySelector('#name').value;
     var userPhone = document.querySelector('#phone').value;
 
-    // Формируем сообщение, включая имя и номер телефона пользователя
-    var message = `${userName} - ${userPhone}`;
+    // Добавляем символ плюса в начало номера телефона
+    var formattedPhone = '+' + userPhone;
+
+    // Формируем сообщение, включая имя и отформатированный номер телефона пользователя
+    var message = `${userName} - ${formattedPhone}`;
 
     // Bot token
     var token = '6402112095:AAEiMcLy4raZiGg2a9SYYT1-noqKX-Qyne8';
@@ -63,4 +66,3 @@ elModalForm.addEventListener('submit', (e) => {
     document.querySelector('#name').value = '';
     document.querySelector('#phone').value = '';
 });
-
