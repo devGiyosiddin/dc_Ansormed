@@ -39,8 +39,7 @@ body{
   width: 100%;
   min-height: 100vh;
   z-index: -1;
-  filter: blur(3px);
-  background: url('../img/black=girl=img.jpg') #555 no-repeat center;
+  background: url('../img/doctor-bg-img.jpeg') #555 no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -538,16 +537,15 @@ th {
 .modal-sub-btn {
   padding: 8px 10px;
   color: #fff;
-  /* font-weight: 500; */
   cursor: pointer;
   margin-bottom: 20px;
   border: 0;
   border-radius: 7px;
-  background-color: #555;
+  background-color: #777;
   transition: 0.3s ease;
 }
 .modal-sub-btn:hover {
-  background-color: #777;
+  background-color: #555;
 }
 .modal-sub-btn:active {
   opacity: 0.7;
