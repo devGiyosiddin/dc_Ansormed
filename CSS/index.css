@@ -40,7 +40,7 @@ body{
   min-height: 100vh;
   z-index: -1;
   filter: blur(3px);
-  background: url('../img/body-bg-img.png') #555 no-repeat center;
+  background: url('../img/black=girl=img.jpg') #555 no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -489,7 +489,8 @@ th {
   top: 0;
   left: 0;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .modal--open {
@@ -502,35 +503,50 @@ th {
   align-items: center;
   justify-content: center;
   width: 300px;
-  padding: 30px;
+  /* padding: 0 30px 30px; */
   margin: 150px auto;
   height: auto;
   border-radius: 20px;
-  background-color: #5c5c5c;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
+
 .modal-label {
+  width: 100%;
   color: #fff;
+  text-align: center;
   font-family: var(--text-font);
-  font-weight: 600;
   margin-bottom: 20px;
+  padding: 20px 0;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: #777;
 }
 
 #name, #phone {
   margin-bottom: 20px;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  background-color: transparent;
+}
+#name::placeholder, 
+#phone::placeholder {
+  color: #fff;
 }
 
 .modal-sub-btn {
-  padding: 5px;
+  padding: 8px 10px;
   color: #fff;
-  font-weight: 500;
+  /* font-weight: 500; */
   cursor: pointer;
+  margin-bottom: 20px;
   border: 0;
   border-radius: 7px;
-  background-color: #333;
+  background-color: #555;
+  transition: 0.3s ease;
 }
 .modal-sub-btn:hover {
-  background-color: #444;
+  background-color: #777;
 }
 .modal-sub-btn:active {
   opacity: 0.7;
