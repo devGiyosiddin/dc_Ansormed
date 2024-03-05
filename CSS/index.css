@@ -37,7 +37,6 @@ body{
   top: 0;
   left: 0;
   z-index: -1;
-  transform: scale(1.0);
   background: url('../img/doctor-bg-img.jpeg') #555 no-repeat center;
   background-position: center;
   background-size: cover;
