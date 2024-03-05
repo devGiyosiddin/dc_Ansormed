@@ -238,8 +238,8 @@ body{
 
 
 /* INDEX-SERVICES */
-.index-services{
-  padding-top: 120px 0;
+.index-services {
+  padding-top: 120px;
 }
 .index-services-heading{
   width: 100%;
@@ -343,7 +343,7 @@ body{
 .blog-post-img {
   width: 100%;
   height: 200px;
-  border-radius: 10;
+  border-radius: 10px;
   object-fit: cover;
 }
 
@@ -695,9 +695,6 @@ th {
 
 /* Responsive styles for blog section */
 @media only screen and (max-width: 768px) {
-  .body-bg {
-    background-attachment: fixed;
-  }
   .blog-posts {
     display: grid;
     grid-template-columns: 1fr;
