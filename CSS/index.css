@@ -25,6 +25,7 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
+  overflow: hidden;
   font-family: var(--text-font);
   background-color: #555;
   margin: 0;
@@ -39,6 +40,7 @@ body{
   bottom: 0;
   width: 100%;
   z-index: -1;
+  overflow: hidden;
   background: url('../img/doctor-bg-img.jpeg') #555 no-repeat center;
   background-size: cover;
   background-attachment: fixed;
