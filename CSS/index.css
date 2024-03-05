@@ -167,6 +167,7 @@ body{
 .main-link:hover{
   color: #fff;
   background-color: #777;
+  border: 1px solid #777;
 }
 .main-link:active{
   opacity: 0.6;
