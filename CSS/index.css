@@ -606,8 +606,9 @@ th {
     left: 0;
     top: 100%;
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
   }
+
   .site-header-sitenav .sitenav-list {
     flex-direction: column;
     align-items: flex-end;
@@ -706,6 +707,9 @@ th {
   .blog-post {
     width: 100%;
     margin: 0;
+  }
+  .site-header--open  ~ main  .hero-content {
+    margin-top: 200px;
   }
 }
 
