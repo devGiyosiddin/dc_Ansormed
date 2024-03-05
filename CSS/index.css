@@ -32,13 +32,14 @@ body{
 }
 .body-bg {
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100vh;
   z-index: -1;
   background: url('../img/doctor-bg-img.jpeg') #555 no-repeat center;
-  background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -165,7 +166,6 @@ body{
 .main-link:hover{
   color: #fff;
   background-color: #777;
-  border: 1px solid #777;
 }
 .main-link:active{
   opacity: 0.6;
@@ -694,6 +694,9 @@ th {
 
 /* Responsive styles for blog section */
 @media only screen and (max-width: 768px) {
+  .body-bg {
+    background-attachment: fixed;
+  }
   .blog-posts {
     display: grid;
     grid-template-columns: 1fr;
