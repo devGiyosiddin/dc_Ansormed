@@ -39,7 +39,7 @@ body{
   width: 100%;
   min-height: 100vh;
   z-index: -1;
-  background: url('../img/doctor-bg-img.jpeg') #555 no-repeat center;
+  background: url('../img/doctor-bg-img.jpeg') #555 no-repeat top;
   background-size: cover;
   background-attachment: fixed;
 }
