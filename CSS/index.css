@@ -20,26 +20,15 @@ html{
 }
 
 body{
-  position: relative;
+  /* position: relative; */
   color: #222;
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
   font-family: var(--text-font);
-  background-color: #555;
   margin: 0;
   padding: 0;
-}
-.body-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  min-height: 100vh;
-  z-index: -1;
-  background: url('../img/doctor-bg-img.jpeg') #555 no-repeat top;
+  background: url('../img/doctor-bg-img.jpeg') #555 no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
