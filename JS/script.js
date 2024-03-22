@@ -1,5 +1,4 @@
 'use strict';
-
 const elToggleButton = document.querySelector('.site-header__menu-toggler');
 const elSiteHeader = document.querySelector('.site-header');
 const elModal = document.querySelector('#modal');
@@ -42,21 +41,21 @@ elModalOpenerBtns.forEach((item) => {
 elModalForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    var userName = document.querySelector('#name').value;
-    var userPhone = document.querySelector('#phone').value;
+    let userName = document.querySelector('#name').value;
+    let userPhone = document.querySelector('#phone').value;
 
     // Добавляем символ плюса в начало номера телефона
-    var formattedPhone = '+' + userPhone;
+    // var formattedPhone = '+' + userPhone;
 
     // Формируем сообщение, включая имя и отформатированный номер телефона пользователя
-    var message = `${userName} - ${formattedPhone}`;
+    let message = `${userName} - ${userPhone}`;
 
     // Bot token
-    var token = '6402112095:AAEiMcLy4raZiGg2a9SYYT1-noqKX-Qyne8';
-    var chat_id = '-4097526078';
+    let token = '6402112095:AAEiMcLy4raZiGg2a9SYYT1-noqKX-Qyne8';
+    let chat_id = '-4097526078';
 
     // URL запроса, включая сообщение
-    var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${message}`;
+    let url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${message}`;
 
     let api = new XMLHttpRequest();
     api.open("GET", url, true);
@@ -66,5 +65,5 @@ elModalForm.addEventListener('submit', (e) => {
     document.querySelector('#name').value = '';
     document.querySelector('#phone').value = '';
 
-    elModal.classList.remove('modal--open')
+    elModal.classList.remove('modal--open');
 });
