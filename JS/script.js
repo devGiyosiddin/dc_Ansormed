@@ -52,7 +52,7 @@ elModalForm.addEventListener('submit', (e) => {
 
     // Bot token
     let token = '6402112095:AAEiMcLy4raZiGg2a9SYYT1-noqKX-Qyne8';
-    let chat_id = '-4097526078';
+    let chat_id = '-1002135294576';
 
     // URL запроса, включая сообщение
     let url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${message}`;
