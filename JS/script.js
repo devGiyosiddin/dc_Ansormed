@@ -43,25 +43,33 @@ elModalForm.addEventListener('submit', (e) => {
 
     let userName = document.querySelector('#name').value;
     let userPhone = document.querySelector('#phone').value;
-
-    // Добавляем символ плюса в начало номера телефона
-    // var formattedPhone = '+' + userPhone;
-
-    // Формируем сообщение, включая имя и отформатированный номер телефона пользователя
     let message = `${userName} - ${userPhone}`;
-
-    // Bot token
     let token = '6402112095:AAEiMcLy4raZiGg2a9SYYT1-noqKX-Qyne8';
-    let chat_id = '-1002135294576';
+    let chat_id = '-1002135294576'; // Используйте начальное значение ID
 
-    // URL запроса, включая сообщение
-    let url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${message}`;
+    let url = `https://api.telegram.org/bot${token}/sendMessage`;
+    let formData = new FormData();
+    formData.append('chat_id', chat_id);
+    formData.append('text', message);
 
-    let api = new XMLHttpRequest();
-    api.open("GET", url, true);
-    api.send();
+    fetch(url, {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json()) // Парсим JSON ответ
+    .then(data => {
+        if (data.ok) {
+            // Если запрос успешен, обновляем chat_id с полученным ID из ответа
+            chat_id = data.result.chat.id;
+            console.log('Updated chat_id:', chat_id);
+        } else {
+            console.error('Error occurred:', data.description);
+        }
+    })
+    .catch(error => {
+        console.error('Error occurred:', error);
+    });
 
-    // Очищаем значения полей формы
     document.querySelector('#name').value = '';
     document.querySelector('#phone').value = '';
 
