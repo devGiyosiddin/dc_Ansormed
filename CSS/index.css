@@ -611,7 +611,8 @@ th {
     flex-direction: column;
   }
   .asal-img {
-    width: 95%;
+    width: 100%;
+    max-width: 600px;
     margin-right: 0;
     margin-bottom: 30px;
   }
